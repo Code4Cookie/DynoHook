@@ -156,5 +156,8 @@ namespace dyno {
 
         // callbacks list
         std::map<HookType, std::vector<HookHandler*>> m_handlers;
+
+    public:
+        void* m_extradata = NULL;
     };
 }
